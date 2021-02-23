@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(181, 255, 230);
+    text-align: center;
+    font-family:sans-serif;
+    color:rgb(45, 51, 45)
+}
+
+
+/* HEADER */
+
+.app-header{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: cornflowerblue;
+
+}
+
+
+
+h1 {
+    font-family: cursive;
+    font-size: 2rem;
+    color: rgb(104, 42, 42);
+}
+
+.links {
+    text-decoration: none;
+    margin: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+.book-preview-container{
+    height: 230px;
+    width: 180px;
+    background-color: rgb(106, 240, 229);
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/* LIST */
+
+.book-list{
+    
+    display: grid;
+    width: 100%;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    font-size: 1rem;  text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green
+}
+
+img {
+    margin-bottom: 10px;
+    width: 70px;
+    height: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+.book-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.book-details {
+   margin: 0 auto;
+    width: 450px;
+    height: 100%;
+    background-color: rgb(168, 158, 116);
+    border: 1px solid red;
+    z-index: 1;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(159, 184, 159);
+   margin-top: 20px;
+    padding: 5px;
+}
+
+button{
+    cursor: pointer;
+    background-color: rgb(136, 182, 252);
+    border-radius: 5px;
+    color: rgb(45, 51, 45);
+}
+
+#home-img{
+    width: 50%;
+    height: 50%;
+    
+}
+
+.review-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-add input {
+    display: flex;
+    margin: 5px;
+    height: 25px;
+}
+
+.review-rate li::after {
+    content: '☆';
+  }
+  .review-rate li.fill::after {
+    content: '★';
+  }
